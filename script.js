@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: formData
             });
 
-            if (response.ok) {
+            if (response) {
                 responseMessage.innerText = 'Форма успешно отправлена!';
                 clearFormData();
                 form.reset();
